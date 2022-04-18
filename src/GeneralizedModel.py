@@ -74,6 +74,3 @@ class Neural_Network:
 
     def evaluate(self, X_test, y_test):
         return self.get_accuracy(self.get_prediction(self.feedforward(X_test)),y_test)
-
-
-
