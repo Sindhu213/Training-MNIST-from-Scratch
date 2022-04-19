@@ -1,5 +1,6 @@
 import numpy as np
 def softmax(X):
+    ## Try playing around with learning rate if RuntimeWarning is encountered
     e_x = np.exp(X - np.max(X))
     return e_x / np.sum(e_x,axis=0)
 
